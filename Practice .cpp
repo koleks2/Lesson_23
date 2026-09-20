@@ -7,4 +7,5 @@ int main() {
 
 	std::cout << text.c_str() << " - Lenght: " << text.GetStringLenght() << std::endl;
 	std::cout << text2.c_str() << " - Lenght: " << text2.GetStringLenght() << std::endl;
+	std::cout << ' ';
 }
