@@ -3,7 +3,6 @@ class String {
 private:
 	char* text = nullptr;
 	int lenght = 0;
-	int capecity = 20;
 public:
 	String(const char* text, int capecity);
 
