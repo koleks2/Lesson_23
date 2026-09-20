@@ -4,7 +4,7 @@ private:
 	char* text = nullptr;
 	int lenght = 0;
 public:
-	String(const char* text, int capecity);
+	String(const char* text);
 
 	String(const String& other);
 
