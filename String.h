@@ -1,22 +1,22 @@
 #pragma once
 class String {
 private:
-	char* text = nullptr;
-	int lenght = 0;
+    char* text = nullptr;
+    int lenght = 0;
+
 public:
-	String(const char* text);
+    String();
+    String(const char* text);
+    String(const String& other);
+    ~String();
 
-	String(const String& other);
+    void copyFrom(const String& other);
+    int GetStringLenght() {
+        return lenght - 1;
+    }
 
-	~String();
-
-	int GetStringLenght() {
-		return lenght - 1;
-	}
-
-	const char* c_str() const {
-		return text;
-	}
-
+    const char* c_str() const {
+        return text;
+    }
 };
 
